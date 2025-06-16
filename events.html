@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escapvibe - Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>
+        <div class="logo-container">
+            <img src="assets/img/logo.png" alt="Profile Picture" class="profile-pic">
+            <span class="logo">Escapvibes</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="ourservices.html">Services</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header><br><br><br>
+    <main>
+        <!-- Events Section -->
+    <section id="events">
+        <div class="container">
+            <div class="section-title"><br>
+                <h2 style="color: rgb(79, 226, 226); font-size: 40px; " >Upcoming Adventures</h2>
+                <p>Join our thrilling expeditions designed for every level of adventurer</p>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="assets/img/Chemka.jpg" alt="Mountain Trekking">
+                    </div>
+                    <div class="event-content">
+                        <h3 style="color: rgb(79, 226, 226);">Chemka Hotsprings</h3>
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>July 29, 2025</span>
+                        </div>
+                        <p>Experience the majestic beauty of Chemka Hotsprings on this day trekking adventure.</p>
+                    
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="assets/img/Materuni.jpg" alt="Canyon Exploration">
+                    </div>
+                    <div class="event-content">
+                        <h3 style="color: rgb(79, 226, 226);">Materuni waterfalls</h3>
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>coming soon!</span>
+                        </div>
+                        <p>Discover hidden waterfalls and ancient rock formations in this breathtaking adventure.</p>
+                    
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="assets/img/napuru.jpg" alt="Kayaking Expedition">
+                    </div>
+                    <div class="event-content">
+                        <h3 style="color: rgb(47, 221, 221);">Napuru waterfalls</h3>
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>coming soon!</span>
+                        </div>
+                        <p>Discover hidden waterfalls and ancient rock formations in this breathtaking adventure.</p>
+                
+                    </div>
+                </div>
+            </div>
+<p style="text-align: center; font-size: larger;color: rgb(55, 207, 207);">showcasing videos:</p>
+    <div class="vdeo">
+        <div class="video-container">
+                <video src="assets/vdeo/logo.mp4" type="video/mp4" controls autoplay></video>
+        
+            </div>
+        </main>
+    <footer>
+    
+<div class="social-icons">
+  <a href="https://www.facebook.com/profile.php?id=61577591903187" target="_blank" class="social-icon">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://x.com/EscapVibes?t=SymckP76rxeHt-FrO4hWuw&s=09" target="_blank" class="social-icon">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/escapvibes?igsh=MXM5eWNnMHlra3doYg==" target="_blank" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://youtube.com/@Escapvibes" target="_blank" class="social-icon">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://tiktok.com/@escap_vibes" class="social-icon" target="_blank">
+  <i class="fab fa-tiktok"></i>
+</a>
+  <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" target="_blank" class="social-icon">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div><br>
+<p style="color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:smaller;">
+    Made with ❤ By jimmy! | @ 2025 EscapVibes</p>
+    
+    </footer>
+     <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-links li a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
